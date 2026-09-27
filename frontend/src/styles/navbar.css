@@ -1,0 +1,404 @@
+/* =========================================
+   PROFESSIONAL NAVBAR
+========================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: #172033;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 74px;
+
+    margin: 0 auto;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 28px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-brand {
+    flex-shrink: 0;
+    color: #e7f0ee;
+}
+
+.research-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.research-logo-icon {
+    width: 45px;
+    height: 45px;
+    color: #6bb7b5;
+    flex-shrink: 0;
+}
+
+.research-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.research-logo-name {
+    color: #f8f7f3;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.research-logo-name span {
+    color: #6bb7b5;
+}
+
+.research-logo-text small {
+    margin-top: 5px;
+    color: #94a3b8;
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.navbar-menu {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 28px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navbar-links a {
+    position: relative;
+
+    padding: 28px 0;
+
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.navbar-links a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 19px;
+
+    height: 2px;
+
+    background: #5fa9a7;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+}
+
+.navbar-links a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.navbar-user {
+    color: #cbd5e1;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-ai-link,
+.nav-upload-link {
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-ai-link:hover,
+.nav-upload-link:hover {
+    color: #ffffff;
+}
+
+.login-link {
+    padding: 9px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+
+    color: #f8fafc;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.login-link:hover {
+    border-color: #6bb7b5;
+    color: #8dd1ce;
+}
+
+.signup-button {
+    padding: 9px 16px;
+
+    border: 1px solid #2f6f73;
+    border-radius: 7px;
+
+    background: #2f6f73;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.signup-button:hover {
+    background: #3c8588;
+    border-color: #3c8588;
+}
+
+.nav-dashboard-button {
+    padding: 8px 13px;
+
+    border: 1px solid rgba(107, 183, 181, 0.5);
+    border-radius: 7px;
+
+    color: #8dd1ce;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-dashboard-button:hover {
+    background: rgba(107, 183, 181, 0.08);
+}
+
+.logout-button {
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 7px;
+
+    background: transparent;
+    color: #cbd5e1;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    border-color: #d99b9b;
+    color: #efb1b1;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-button {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 7px;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 20px;
+    height: 2px;
+
+    margin: 4px auto;
+
+    background: #e2e8f0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1150px) {
+    .navbar-links {
+        gap: 15px;
+    }
+
+    .navbar-menu {
+        gap: 16px;
+    }
+
+    .nav-ai-link,
+    .nav-upload-link {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+    .navbar-container {
+        min-height: 68px;
+        padding: 0 20px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: absolute;
+
+        top: 68px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        padding: 20px;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+
+        background: #172033;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+        box-shadow: 0 14px 25px rgba(15, 23, 42, 0.15);
+    }
+
+    .navbar-menu.menu-open {
+        display: flex;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .navbar-links a {
+        padding: 12px 0;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .navbar-links a::after {
+        display: none;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .navbar-actions>* {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-user {
+        padding: 8px 0;
+    }
+
+    .research-logo-name {
+        font-size: 21px;
+    }
+
+    .research-logo-icon {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 16px;
+    }
+
+    .research-logo-text small {
+        display: none;
+    }
+
+    .research-logo-name {
+        font-size: 20px;
+    }
+
+    .research-logo-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
