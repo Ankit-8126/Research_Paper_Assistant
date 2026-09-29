@@ -1,0 +1,600 @@
+/* =========================================
+   SEARCH PAGE
+========================================= */
+
+.search-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 65px 30px 90px;
+
+    background: #f8f7f3;
+    color: #172033;
+}
+
+.search-page *,
+.search-page *::before,
+.search-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.search-header {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 48px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.search-eyebrow {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #2f6f73;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.search-header h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.08;
+
+    letter-spacing: -0.035em;
+}
+
+.search-header p {
+    max-width: 600px;
+    margin: 17px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.search-header-note {
+    min-width: 175px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-left: 2px solid #2f6f73;
+}
+
+.search-header-note span {
+    color: #64748b;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.search-header-note strong {
+    margin-top: 8px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.search-header-note small {
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   SEARCH CONTROLS
+========================================= */
+
+.search-controls {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 42px;
+
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+}
+
+.main-search-box {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #cfd6dd;
+    background: #ffffff;
+
+    transition: border-color 0.2s ease;
+}
+
+.main-search-box:focus-within {
+    border-color: #2f6f73;
+}
+
+.search-icon {
+    padding-left: 17px;
+
+    color: #2f6f73;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+}
+
+.main-search-box input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 17px 0 10px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: #172033;
+
+    font-size: 13px;
+}
+
+.main-search-box input::placeholder {
+    color: #94a3b8;
+}
+
+.search-filter-row {
+    margin-top: 14px;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.search-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.search-filter label {
+    color: #64748b;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.search-filter select {
+    min-width: 190px;
+    height: 37px;
+
+    padding: 0 30px 0 11px;
+
+    border: 1px solid #d9dee5;
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #172033;
+
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.search-filter select:focus {
+    border-color: #2f6f73;
+}
+
+.clear-search-button {
+    min-height: 37px;
+    padding: 8px 13px;
+
+    border: 1px solid #d9dee5;
+    border-radius: 5px;
+
+    background: #ffffff;
+    color: #64748b;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.clear-search-button:hover {
+    border-color: #2f6f73;
+    color: #2f6f73;
+}
+
+
+/* =========================================
+   RESULTS HEADING
+========================================= */
+
+.search-results-heading {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.search-results-heading>div>span {
+    display: block;
+
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+}
+
+.search-results-heading h2 {
+    margin: 7px 0 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.search-results-description {
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   PAPER CARDS
+========================================= */
+
+.search-results {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.search-paper-card {
+    width: 100%;
+
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 20px;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.search-paper-card+.search-paper-card {
+    margin-top: 10px;
+}
+
+.search-paper-card:hover {
+    border-color: #a9c5c4;
+    box-shadow: 0 12px 30px rgba(23, 32, 51, 0.05);
+    transform: translateY(-1px);
+}
+
+.search-paper-number {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f0ee;
+    color: #2f6f73;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.search-paper-content {
+    min-width: 0;
+}
+
+.search-paper-meta-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.search-paper-meta-top>span:first-child {
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.search-paper-year {
+    color: #94a3b8;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.search-paper-title {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.3;
+
+    transition: color 0.2s ease;
+}
+
+.search-paper-title:hover {
+    color: #2f6f73;
+}
+
+.search-paper-authors {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.search-paper-abstract {
+    max-width: 850px;
+
+    margin: 13px 0 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.search-paper-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-top: 1px solid #edf0f2;
+}
+
+.search-paper-journal {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.search-paper-journal span {
+    color: #94a3b8;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.search-paper-journal strong {
+    color: #475569;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.search-view-button {
+    padding: 8px 13px;
+
+    border: 1px solid #2f6f73;
+    border-radius: 5px;
+
+    color: #2f6f73;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: all 0.2s ease;
+}
+
+.search-view-button:hover {
+    background: #2f6f73;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.search-empty {
+    min-height: 330px;
+    padding: 50px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+}
+
+.search-empty-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f0ee;
+    color: #2f6f73;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+}
+
+.search-empty h2 {
+    margin: 18px 0 8px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.search-empty p {
+    max-width: 430px;
+
+    margin: 0 0 20px;
+
+    color: #64748b;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+    .search-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .search-header-note {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid #2f6f73;
+    }
+
+    .search-filter-row {
+        flex-wrap: wrap;
+    }
+
+    .search-filter select {
+        min-width: 180px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+    .search-page {
+        padding: 50px 20px 65px;
+    }
+
+    .search-header {
+        margin-bottom: 32px;
+    }
+
+    .search-header h1 {
+        font-size: 39px;
+    }
+
+    .search-header-note {
+        padding: 15px;
+    }
+
+    .search-controls {
+        padding: 15px;
+    }
+
+    .search-filter-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .search-filter,
+    .search-filter select,
+    .clear-search-button {
+        width: 100%;
+    }
+
+    .search-results-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-paper-card {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .search-paper-title {
+        font-size: 20px;
+    }
+
+    .search-paper-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .search-view-button {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,812 @@
+/* =========================================
+   LITERATURE REVIEW
+========================================= */
+
+.literature-review-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 62px 30px 85px;
+
+    background: #f8f7f3;
+    color: #172033;
+}
+
+.literature-review-page *,
+.literature-review-page *::before,
+.literature-review-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.literature-header {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.literature-eyebrow {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #2f6f73;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.literature-header h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.08;
+
+    letter-spacing: -0.035em;
+}
+
+.literature-header p {
+    max-width: 620px;
+
+    margin: 17px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.literature-primary-button {
+    padding: 11px 17px;
+
+    border: 1px solid #2f6f73;
+    border-radius: 5px;
+
+    background: #2f6f73;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.literature-primary-button:hover {
+    background: #24595d;
+}
+
+
+/* =========================================
+   OVERVIEW
+========================================= */
+
+.literature-overview {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #d9dee5;
+    border-bottom: 1px solid #d9dee5;
+}
+
+.literature-overview-card {
+    min-height: 130px;
+
+    padding: 22px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-right: 1px solid #d9dee5;
+}
+
+.literature-overview-card:last-child {
+    border-right: none;
+}
+
+.literature-overview-card span {
+    color: #64748b;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.literature-overview-card strong {
+    margin-top: 8px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.literature-overview-card small {
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.literature-progress {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 38px;
+    padding: 22px;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+}
+
+.literature-progress-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.literature-progress-heading span {
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.literature-progress-heading h2 {
+    margin: 7px 0 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.literature-progress-heading strong {
+    color: #2f6f73;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.literature-progress-track {
+    width: 100%;
+    height: 7px;
+
+    margin-top: 18px;
+
+    overflow: hidden;
+
+    background: #e7f0ee;
+}
+
+.literature-progress-track span {
+    display: block;
+    height: 100%;
+
+    background: #2f6f73;
+
+    transition: width 0.3s ease;
+}
+
+.literature-progress>p {
+    margin: 9px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.literature-toolbar {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 27px;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.literature-search {
+    height: 43px;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+
+    transition: border-color 0.2s ease;
+}
+
+.literature-search:focus-within {
+    border-color: #2f6f73;
+}
+
+.literature-search>span {
+    padding-left: 14px;
+
+    color: #2f6f73;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+}
+
+.literature-search input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 14px 0 9px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: #172033;
+
+    font-size: 11px;
+}
+
+.literature-search input::placeholder {
+    color: #94a3b8;
+}
+
+.literature-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.literature-filter label {
+    color: #64748b;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.literature-filter select {
+    width: 180px;
+    height: 43px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d9dee5;
+    border-radius: 4px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #475569;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.literature-filter select:focus {
+    border-color: #2f6f73;
+}
+
+
+/* =========================================
+   LIST
+========================================= */
+
+.literature-list {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.literature-list-heading {
+    margin-bottom: 13px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.literature-list-heading div span {
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.literature-list-heading h2 {
+    margin: 6px 0 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.literature-list-heading>span {
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   PAPER CARD
+========================================= */
+
+.literature-paper-card {
+    padding: 23px;
+
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    gap: 18px;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.literature-paper-card+.literature-paper-card {
+    margin-top: 9px;
+}
+
+.literature-paper-card:hover {
+    border-color: #a9c5c4;
+    box-shadow: 0 10px 25px rgba(23, 32, 51, 0.04);
+}
+
+.literature-paper-number {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f0ee;
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.literature-paper-main {
+    min-width: 0;
+}
+
+.literature-paper-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.literature-paper-top>span:first-child {
+    color: #2f6f73;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.literature-status {
+    padding: 5px 8px;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.literature-status-completed {
+    background: #e3f1e7;
+    color: #356b4a;
+}
+
+.literature-status-progress {
+    background: #e5eef5;
+    color: #3e617a;
+}
+
+.literature-status-review {
+    background: #f8ecd7;
+    color: #8a642c;
+}
+
+.literature-paper-title {
+    display: block;
+
+    margin-top: 9px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+
+    transition: color 0.2s ease;
+}
+
+.literature-paper-title:hover {
+    color: #2f6f73;
+}
+
+.literature-paper-authors {
+    margin: 6px 0 0;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+.literature-paper-meta {
+    margin-top: 9px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+.literature-paper-actions {
+    min-width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 7px;
+}
+
+.literature-paper-actions select {
+    height: 31px;
+
+    padding: 0 8px;
+
+    border: 1px solid #d9dee5;
+    border-radius: 4px;
+
+    background: #ffffff;
+    color: #475569;
+
+    font-size: 9px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.literature-paper-actions select:focus {
+    border-color: #2f6f73;
+}
+
+.literature-view-button,
+.literature-remove-button {
+    min-height: 31px;
+
+    padding: 7px 9px;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.literature-view-button {
+    border: 1px solid #2f6f73;
+    color: #2f6f73;
+
+    transition: all 0.2s ease;
+}
+
+.literature-view-button:hover {
+    background: #2f6f73;
+    color: #ffffff;
+}
+
+.literature-remove-button {
+    border: 1px solid #d9dee5;
+    background: #ffffff;
+    color: #a64b4b;
+
+    transition: all 0.2s ease;
+}
+
+.literature-remove-button:hover {
+    border-color: #a64b4b;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.literature-empty {
+    min-height: 320px;
+    padding: 50px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid #d9dee5;
+}
+
+.literature-empty-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f0ee;
+    color: #2f6f73;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+}
+
+.literature-empty h2 {
+    margin: 17px 0 7px;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.literature-empty p {
+    max-width: 430px;
+
+    margin: 0 0 18px;
+
+    color: #64748b;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.literature-secondary-button {
+    display: inline-block;
+
+    padding: 9px 14px;
+
+    border: 1px solid #2f6f73;
+    border-radius: 4px;
+
+    color: #2f6f73;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    transition: all 0.2s ease;
+}
+
+.literature-secondary-button:hover {
+    background: #2f6f73;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.literature-bottom {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 42px auto 0;
+    padding-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    border-top: 1px solid #d9dee5;
+}
+
+.literature-bottom>div>span {
+    color: #2f6f73;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.literature-bottom h2 {
+    margin: 7px 0 0;
+
+    color: #172033;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.literature-bottom p {
+    max-width: 600px;
+
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+    .literature-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .literature-overview-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .literature-overview-card:nth-child(-n + 2) {
+        border-bottom: 1px solid #d9dee5;
+    }
+
+    .literature-paper-card {
+        grid-template-columns: 42px minmax(0, 1fr);
+    }
+
+    .literature-paper-actions {
+        grid-column: 2;
+        min-width: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+    .literature-review-page {
+        padding: 48px 20px 65px;
+    }
+
+    .literature-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .literature-header h1 {
+        font-size: 39px;
+    }
+
+    .literature-primary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .literature-overview {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .literature-overview-card {
+        min-height: 110px;
+        padding: 16px;
+    }
+
+    .literature-overview-card strong {
+        font-size: 29px;
+    }
+
+    .literature-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .literature-filter select {
+        width: 100%;
+    }
+
+    .literature-list-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .literature-paper-card {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 19px;
+    }
+
+    .literature-paper-actions {
+        grid-column: auto;
+
+        display: flex;
+        width: 100%;
+    }
+
+    .literature-paper-actions select,
+    .literature-view-button,
+    .literature-remove-button {
+        width: 100%;
+    }
+
+    .literature-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .literature-bottom .literature-secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+}
